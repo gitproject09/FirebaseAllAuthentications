@@ -13,6 +13,11 @@ Getting Started
 
 - Add Firebase to your Android Project :(https://firebase.google.com/docs/android/setup).
 
+# Changes 
+
+Replace your google-services.json file here : app/google-services.json (your google-services.json file)
+
+
 ## Google Sign In Setup
 
 - Go to the [Firebase Console](https://console.firebase.google.com) and navigate to your project:
