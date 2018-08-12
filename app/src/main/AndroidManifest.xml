@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.spn.firebase.start.auth">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:name="android.support.multidex.MultiDexApplication"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.spn.firebase.start.auth.ChooserActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.spn.firebase.start.auth.CustomAuthActivity"
+            android:label="@string/label_custom_auth" />
+        <activity
+            android:name="com.spn.firebase.start.auth.GoogleSignInActivity"
+            android:label="@string/label_google_sign_in" />
+        <activity
+            android:name="com.spn.firebase.start.auth.FacebookLoginActivity"
+            android:label="@string/label_facebook_login" />
+        <activity
+            android:name="com.spn.firebase.start.auth.EmailPasswordActivity"
+            android:label="@string/label_emailpassword"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.spn.firebase.start.auth.PhoneAuthActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:label="@string/label_phone_auth" />
+        <activity
+            android:name="com.spn.firebase.start.auth.AnonymousAuthActivity"
+            android:label="@string/label_anonymous_auth" />
+        <activity
+            android:name="com.spn.firebase.start.auth.TwitterLoginActivity"
+            android:label="@string/label_twitter_login" />
+        <activity
+            android:name="com.spn.firebase.start.auth.FirebaseUIActivity"
+            android:label="@string/label_firebase_ui" />
+
+        <!-- Facebook Configuration -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"
+            tools:replace="android:value" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            tools:replace="android:theme" />
+    </application>
+
+</manifest>
