@@ -13,7 +13,7 @@ Getting Started
 
 - Add Firebase to your Android Project :(https://firebase.google.com/docs/android/setup).
 
-# Changes 
+## Changes 
 
 Replace your google-services.json file here : app/google-services.json (your google-services.json file)
 
